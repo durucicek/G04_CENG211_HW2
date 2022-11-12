@@ -47,7 +47,13 @@ public class PickupTruck extends Vehicle {
 		return truckBedTypeValue;
 	}
 
-	public void calculateSCT() {
+	public double calculateSCT() {
+		SCT = (truckBedTypeValue()*productionYearValue()) / cabTypeValue();
+		return SCT;
+	}
+	
+	public double calculateTotalPrice() {
+		return 250000 * (1+ (calculateSCT()*0.6)) + (1+ VAT/100);
 		
 	}
 }

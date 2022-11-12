@@ -2,11 +2,13 @@ package vechicles;
 
 
 public class Vehicle {
-	private String vehicleID;
-	private String monthOfSale;
-	private String cityOfSale;
-	private int productionYear;
-	private int VAT;
+	//protected mi yapılmalı getter mı ? 
+	protected String vehicleID;
+	protected String monthOfSale;
+	protected String cityOfSale;
+	protected int productionYear;
+	protected int VAT;
+	protected double SCT;
 	
 	public Vehicle(String vehicleID, String monthOfSale, String cityOfSale, int productionYear, int VAT) {
 		this.vehicleID = vehicleID;
@@ -79,7 +81,16 @@ public class Vehicle {
 		}
 		
 	
-	public void calculateSCT() {
+	
+	
+	//??
+	public double calculateSCT() {
+		return SCT;
+	}
+	
+	public double calculateTotalPrice() {
+		return 0;
+		
 	}
 }
 

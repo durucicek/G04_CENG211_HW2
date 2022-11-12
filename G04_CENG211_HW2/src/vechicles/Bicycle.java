@@ -50,4 +50,14 @@ public class Bicycle extends Vehicle {
 		}
 		return seatPostValue;
 	}
+	
+	public double calculateSCT() {
+		SCT = (chainTypeValue()*seatPostValue()*0.1) + saleMonthValue();
+		return SCT;
+	}
+	
+	public double calculateTotalPrice() {
+		return (10000 * 0.9) * (1 + calculateSCT()) + (1+ VAT/100);
+		
+	}
 }

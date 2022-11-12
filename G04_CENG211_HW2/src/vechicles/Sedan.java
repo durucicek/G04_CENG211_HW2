@@ -27,6 +27,9 @@ public class Sedan extends Automobile {
 		return roofTypeValue;
 	}
 
-
+	public double calculateSCT() {
+		SCT = (engineVolume*0.2*roofTypeValue())/productionYearValue();
+		return SCT;
+	}
 
 }

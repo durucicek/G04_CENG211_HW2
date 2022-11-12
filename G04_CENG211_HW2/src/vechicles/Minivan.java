@@ -32,5 +32,8 @@ public class Minivan extends Automobile {
 		return seatsValue;
 	}
 	
-
+	public double calculateSCT() {
+		SCT = (0.6*productionYearValue()) / (engineVolume + seatsValue());
+		return SCT;
+	}
 }

@@ -24,5 +24,8 @@ public class Hatchback extends Automobile {
 		return cityModeValue;
 	}
 
-	
+	public double calculateSCT() {
+		SCT = (engineVolume*0.3*productionYearValue()) + cityModeValue();
+		return SCT;
+	}
 }
