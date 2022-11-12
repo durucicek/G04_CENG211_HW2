@@ -3,8 +3,8 @@ package vechicles;
 public class Minivan extends Automobile {
 	private int numberOfSeats;
 	
-	public Minivan(String vehicleID, String monthOfSale, String cityOfSale, int productionYear, int VAT,
-			Double engineVolume,int numberOfSeats ) {
+	public Minivan(String vehicleID, String monthOfSale, String cityOfSale, int productionYear,
+			int numberOfSeats, Double engineVolume, int VAT) {
 		super(vehicleID, monthOfSale, cityOfSale, productionYear, VAT, engineVolume);
 		this.numberOfSeats = numberOfSeats;
 	}

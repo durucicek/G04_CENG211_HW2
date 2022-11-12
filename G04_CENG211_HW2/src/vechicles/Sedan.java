@@ -3,8 +3,8 @@ package vechicles;
 public class Sedan extends Automobile {
 	private String roofType;
 
-	public Sedan(String vehicleID, String monthOfSale, String cityOfSale, int productionYear, int VAT,
-			Double engineVolume, String roofType) {
+	public Sedan(String vehicleID, String monthOfSale, String cityOfSale, int productionYear,String roofType,
+			Double engineVolume,int VAT) {
 		super(vehicleID, monthOfSale, cityOfSale, productionYear, VAT, engineVolume);
 		this.roofType = roofType;
 	}

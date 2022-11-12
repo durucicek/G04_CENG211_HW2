@@ -3,8 +3,8 @@ package vechicles;
 public class Hatchback extends Automobile {
 	private String cityMode;
 	
-	public Hatchback(String vehicleID, String monthOfSale, String cityOfSale, int productionYear, int VAT,
-			Double engineVolume, String cityMode) {
+	public Hatchback(String vehicleID, String monthOfSale, String cityOfSale, int productionYear,
+			String cityMode , Double engineVolume, int VAT) {
 		super(vehicleID, monthOfSale, cityOfSale, productionYear, VAT, engineVolume);
 		this.cityMode = cityMode;
 	}

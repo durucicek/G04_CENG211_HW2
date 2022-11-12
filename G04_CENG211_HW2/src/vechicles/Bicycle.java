@@ -5,7 +5,7 @@ public class Bicycle extends Vehicle {
 	private String seatPost;
 	
 	public Bicycle(String vehicleID, String monthOfSale, String cityOfSale, 
-			int productionYear, int VAT, String chainType, String seatPost) {
+			int productionYear, String chainType, String seatPost,int VAT ) {
 		super(vehicleID, monthOfSale, cityOfSale, productionYear, VAT);
 		this.chainType = chainType;
 		this.seatPost = seatPost;

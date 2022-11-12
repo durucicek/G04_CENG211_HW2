@@ -92,6 +92,10 @@ public class Vehicle {
 		return 0;
 		
 	}
+	
+	public String getID() {
+		return vehicleID;
+	}
 }
 
 

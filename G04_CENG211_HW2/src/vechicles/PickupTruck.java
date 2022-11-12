@@ -5,7 +5,7 @@ public class PickupTruck extends Vehicle {
 	private String truckBedType;
 	
 	public PickupTruck(String vehicleID, String monthOfSale, String cityOfSale, 
-			int productionYear, int VAT, String cabType, String truckBedType) {
+			int productionYear, String cabType, String truckBedType, int VAT) {
 		super(vehicleID, monthOfSale, cityOfSale, productionYear, VAT);
 		this.cabType = cabType;
 		this.truckBedType = truckBedType;
